@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="func.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>API Example (incomlete)</h1>
+    </div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#menu0">Get User</a></li>
+        <li><a data-toggle="tab" href="#menu1">Add User</a></li>
+        <li><a data-toggle="tab" href="#menu2">Delete User</a></li>
+        <li><a data-toggle="tab" href="#menu3">Change User</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="menu0" class="tab-pane fade in active">
+            <p style="margin-top: 10px"></p>
+            <button id="get-all-user" type="button" class="btn btn-primary">Get All User</button>
+            <p style="margin-top: 10px"></p>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="get-username" type="text" class="form-control" name="username" placeholder="username">
+                <span class="input-group-btn">
+                        <button id="get-user" class="btn btn-default" type="button">Get</button>
+                    </span>
+            </div>
+            <p style="margin-top: 10px"></p>
+            <div id="result0"></div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <p style="margin-top: 10px"></p>
+            <button id="add-user" type="button" class="btn btn-primary">Add User</button>
+            <p style="margin-top: 10px"></p>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="add-username" type="text" class="form-control" name="username" placeholder="username">
+                <input id="add-password" type="password" class="form-control" name="password" placeholder="password">
+                <input id="add-email" type="text" class="form-control" name="email" placeholder="email">
+                <input id="add-profilename" type="text" class="form-control" name="profilename" placeholder="profile name">
+            </div>
+            <p style="margin-top: 10px"></p>
+            <div id="result1"></div>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <p style="margin-top: 10px"></p>
+            <button id="del-user" type="button" class="btn btn-primary">Delete User</button>
+            <p style="margin-top: 10px"></p>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="del-username" type="text" class="form-control" name="username" placeholder="username">
+            </div>
+            <p style="margin-top: 10px"></p>
+            <div id="result2"></div>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+            <p style="margin-top: 10px"></p>
+            <button id="change-user" type="button" class="btn btn-primary">Change User</button>
+            <p style="margin-top: 10px"></p>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="change-username" type="text" class="form-control" name="username" placeholder="username">
+                <input id="change-password" type="password" class="form-control" name="password" placeholder="password">
+                <input id="change-email" type="text" class="form-control" name="email" placeholder="email">
+                <input id="change-profilename" type="text" class="form-control" name="profilename" placeholder="profile name">
+            </div>
+            <p style="margin-top: 10px"></p>
+            <div id="result3"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
